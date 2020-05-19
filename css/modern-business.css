@@ -1,0 +1,65 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+.navbar-brand{ 
+  width: 300px
+}
+
+h1{ 
+  font-family: 'Oswald', sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 100px;
+}
+
+h2{ 
+  font-family: 'Oswald', sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 40px
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+ 
+}
+
+.card { 
+  border: none;
+}
+
+.banner-text { 
+font-size: 50px;
+text-align: center;
+margin:15px;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+  h1{ 
+    font-size: 60px;
+  }
+  h2{ 
+    font-size: 30px;
+  }
+  .card{ 
+    width: 370px;
+    margin: 0 auto;
+  }
+}
+
+
