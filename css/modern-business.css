@@ -21,6 +21,9 @@ h2{
   -webkit-text-stroke-color: black;
   font-size: 40px
 }
+.logo-small-screen{ 
+  display: none;
+}
 
 header.masthead {
   position: relative;
@@ -60,6 +63,20 @@ margin:15px;
     width: 370px;
     margin: 0 auto;
   }
+}
+
+@media screen and (max-width: 375px) {
+  
+  .logo-brand{ 
+    display: none;
+  }
+
+ .logo-small-screen{ 
+   margin: 5px;
+   display: inline;
+ }
+
+  
 }
 
 
