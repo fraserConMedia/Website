@@ -17,10 +17,12 @@ h1{
 
 h2{ 
   font-family: 'Oswald', sans-serif;
-  -webkit-text-stroke-width: 1px;
+  
   -webkit-text-stroke-color: black;
-  font-size: 40px
+  font-size: 50px;
 }
+
+
 .logo-small-screen{ 
   display: none;
 }
@@ -52,6 +54,15 @@ margin:15px;
   margin-bottom: 30px;
 }
 
+
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
 
 
 @media screen and (max-width: 992px) {
