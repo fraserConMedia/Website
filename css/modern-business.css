@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 
+
+
 .navbar-brand{ 
   width: 300px
 }
@@ -78,6 +80,17 @@ margin:15px;
   margin-bottom: 20px;
 }
 
+.gallery-button-container{ 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.gallery-button{ 
+  width:250px;
+  float: right;
+}
+
 .input-box{ 
   width: 90%;
   padding: 5px;
@@ -91,6 +104,7 @@ margin:15px;
   width:320px;
   margin:10px;
 }
+
 
 @media screen and (max-width: 992px) {
 
