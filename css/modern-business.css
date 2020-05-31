@@ -154,7 +154,15 @@ margin-bottom: 30px;
    margin: 5px;
    display: inline;
  }
-
+ .form-button{ 
+  
+  width:320px;
+  margin:0;
+}
+.gallery-button{ 
+  margin:0;
+  width:320px;
+}
   
 }
 
