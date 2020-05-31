@@ -60,6 +60,7 @@
 
     <!-- Page Heading/Breadcrumbs -->
     <h1 class="mt-4 mb-3 about-title">Fraser Construction </h1>
+    <p class="sub-title">Nothing but the best</p>
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
         <a href="index.html">Home</a>
@@ -79,9 +80,66 @@
         <p><strong>Insured, Licensed, and Bonded specializing in:</strong>
           Commercial Remodels, Commercial maintenance, Residential remodels, Residential repairs, Exterior and Interior maintenance. We also offer Handyman repairs, because no job is too big or too small.</p>
           
-          <p>When partnering with Fraser Construction, you can rest easy knowing that we are a business who takes pride in providing exceptional services for guaranteed customer satisfaction. We go above and beyond, tailoring each project to our client’s specific wants/needs. Our talented team has honed construction services for every phase of the process, from design to completion. We are professional, detail oriented, and ready to make your dream space,a reality.</p>
+          <p>When partnering with Fraser Construction, you can rest easy knowing that we are a business who takes pride in providing exceptional services for guaranteed customer satisfaction. We go above and beyond, tailoring each project to our client’s specific wants/needs. Our talented team has honed construction services for every phase of the process, from design to completion. We are professional, detail oriented, and ready to make your dream space a reality.</p>
 
           <p><strong>Contact us today, for your complimentary quote!</strong> </p>
+
+           <!-- Button trigger modal -->
+  <div class="modal-container">
+    <button type="button" class="btn btn-danger form-button" data-toggle="modal" data-target="#exampleModal">
+      Get a Quote
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="form-container">
+
+            <h4 class="modal-title w-100 font-weight-bold contact-header">Write to us</h4>
+            <form name="contact" method="POST" data-netlify="true">
+              <p>
+                <label>Your Name:</label> <input type="text" name="name" class="input-box" />  
+              </p>
+              <p>
+                <label>Your Email:</label> <input type="email" name="email" class="input-box"  />
+              </p>
+              <p>
+                <label>Your Phone Number:</label> <input type="phone" name="phone" class="input-box"  />
+              </p>
+              <p>
+                How would you like to be contacted?
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="contactPref[]" id="text" value="text" checked>
+                  <label class="form-check-label" for="text">
+                    Text
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="contactPref[]" id="text" value="text" checked>
+                  <label class="form-check-label" for="text">
+                    Call
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="contactPref[]" id="email" value="Email">
+                  <label class="form-check-label" for="email">
+                    Email
+                  </label>
+                </p>
+              <p>
+                <label>Message:</label><textarea name="message" class="input-box" ></textarea>
+              </p>
+              <p>
+                <button type="submit" class="btn btn-danger form-button">Send</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
       </div>
       
     </div>
@@ -92,11 +150,14 @@
   <!-- /.container -->
 
  
+
+
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Fraser Construction 2020</p>
     </div>
+    
     <!-- /.container -->
   </footer>
 

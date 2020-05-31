@@ -102,42 +102,49 @@
 
     <!-- Contact Form -->
     <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <div class="row">
+   
       <div class="col-lg-8 mb-4">
         <h3>Send us a Message</h3>
-        <form name="sentMessage" id="contactForm" novalidate>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Full Name:</label>
-              <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-              <p class="help-block"></p>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name:</label> <input type="text" name="name" class="input-box" />  
+          </p>
+          <p>
+            <label>Your Email:</label> <input type="email" name="email" class="input-box"  />
+          </p>
+          <p>
+            <label>Your Phone Number:</label> <input type="phone" name="phone" class="input-box"  />
+          </p>
+          <p>
+            How would you like to be contacted?
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="contactPref[]" id="text" value="text" checked>
+              <label class="form-check-label" for="text">
+                Text
+              </label>
             </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Phone Number:</label>
-              <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="contactPref[]" id="text" value="text" checked>
+              <label class="form-check-label" for="text">
+                Call
+              </label>
             </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Email Address:</label>
-              <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-            </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Message:</label>
-              <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-            </div>
-          </div>
-          <div id="success"></div>
-          <!-- For success/fail messages -->
-          <button type="submit" class="btn btn-danger" id="sendMessageButton">Send Message</button>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="contactPref[]" id="email" value="Email">
+              <label class="form-check-label" for="email">
+                Email
+              </label>
+            </p>
+          <p>
+            <label>Message:</label><textarea name="message" class="input-box" ></textarea>
+          </p>
+          <p>
+            <button type="submit" class="btn btn-danger form-button">Send</button>
+          </p>
         </form>
       </div>
 
-    </div>
+    
     <!-- /.row -->
 
   </div>

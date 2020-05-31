@@ -115,6 +115,18 @@ margin:15px;
   margin:10px;
 }
 
+.about-form-button{ 
+margin-bottom: 30px;
+}
+
+.modal-container{ 
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.footer{ 
+  border: 2px solid green;
+}
 
 @media screen and (max-width: 992px) {
 
